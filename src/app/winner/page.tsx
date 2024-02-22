@@ -31,7 +31,7 @@ export default function Winner() {
     <div className="h-screen flex flex-col items-center justify-center">
       {winner ? (
         <>
-          <h1 className="mt-3 font-semibold italic text-2xl">GANADOR:</h1>
+          <h1 className="mt-3 font-semibold italic text-2xl">SALIDA FAVORITA:</h1>
           <div className="overflow-y">
             <Card
               key={winner.name}

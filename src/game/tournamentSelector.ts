@@ -17,6 +17,10 @@ export function resetValues() {
   round = 1;
 }
 
+export function getTotalRounds(): number {
+  return Math.ceil(Math.log2(objets.length));
+}
+
 export function getRound() {
   return round;
 }

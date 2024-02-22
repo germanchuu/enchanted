@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Card from "@/components/card";
 import LoadingSpin from "@/components/loadingSpin";
-import { getPairImages, getRound, processSelected } from "@/game/tournamentSelector";
+import { getPairImages, getRound, processSelected, getTotalRounds } from "@/game/tournamentSelector";
 
 interface Image {
   url: string;
@@ -35,7 +35,7 @@ export default function Home() {
     <div className="h-screen flex flex-col items-center justify-center">
       {objets.length > 0 && objets.length > 1  ? (
         <>
-          <h1 className="mt-3 font-semibold italic text-2xl">RONDA {round}</h1>
+          <h1 className="mt-3 font-semibold italic text-2xl">RONDA {round} / {getTotalRounds()}</h1>
           <h1 className="mt-3 font-semibold italic text-2xl">
             ESCOGE UNA OPCIÓN:
           </h1>
