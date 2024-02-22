@@ -37,7 +37,7 @@ export default function Home() {
         <>
           <h1 className="mt-3 font-semibold italic text-2xl">RONDA {round} / {totalRounds}</h1>
           <h1 className="mt-3 font-semibold italic text-2xl">
-            ESCOGE UNA OPCIÓN:
+            ¿QUÉ SALIDA TE GUSTÓ MÁS?
           </h1>
           <div className="overflow-y">
             <Card
