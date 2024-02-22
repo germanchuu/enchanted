@@ -1,4 +1,4 @@
-import { data, shuffleArray } from "@/data/images";
+import { shuffleArray } from "@/data/images";
 
 interface Image {
   url: string;
@@ -9,16 +9,13 @@ let objets: Image[] = shuffleArray();
 let winners: Image[] = [];
 let index: number = 0;
 let round: number = 1;
+export const totalRounds: number = Math.ceil(Math.log2(objets.length));
 
 export function resetValues() {
   objets = shuffleArray();
   winners = [];
   index = 0;
   round = 1;
-}
-
-export function getTotalRounds(): number {
-  return Math.ceil(Math.log2(objets.length));
 }
 
 export function getRound() {
